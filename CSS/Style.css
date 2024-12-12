@@ -1,0 +1,224 @@
+body{
+    background-image: url(../Images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.UpperScreen{
+    text-align: center;
+}
+
+.UpperAbout{
+    color: gray;
+}
+
+.UpperScreen button{
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+/*.DwnBtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}*/
+
+.BlueDwnBtn{
+    background-color: #6174ff;
+    box-shadow: #6174ff;
+}
+
+.GreenDwnBtn{
+    background-color: #26bba5;
+}
+
+.MacImg img{
+    margin-left: -120px;
+    /*height: 620px;*/
+    height: auto;
+    width: 70%;
+}
+
+.RightAboutPC{
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.RightUpperAbout{
+    color: gray;
+    direction: ltr;
+    text-align: left;
+}
+
+
+
+.Benefits img{
+    height: 40px;
+}
+
+.Benefits{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.Logos img{
+    margin: 30px;
+}
+
+.Logos a{
+    text-decoration: none;
+}
+
+.Footer{
+    background-color: rgb(231, 231, 250);
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "Logo link1 link2 link3 social"
+    "Logo link4 link5 empty social"
+    ;
+
+    justify-content: center;
+}
+
+.Footer img{
+    align-self: center;
+    height: 50px;
+}
+
+.Logo{
+    grid-area: Logo;
+    display: flex;
+    justify-content: center;
+}
+
+.lnk1{
+    grid-area: link1;
+}
+
+.lnk2{
+    grid-area: link2;
+}
+
+.lnk3{
+    grid-area: link3;
+}
+
+.lnk4{
+    grid-area: link4;
+}
+
+.lnk5{
+    grid-area: link5;
+}
+
+.Social{
+    grid-area: social;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ln{
+   text-decoration: none;
+   color: rgb(88, 88, 88);
+   text-align: left;
+   align-self: center;
+}
+
+.Social img{
+    height: 25px;
+}
+
+.Social a{
+    margin: auto;
+    text-decoration: none;
+}
+
+.ResponsiveImg{
+    height: auto;
+    width: 100%;
+}
+
+@media(max-width: 1128px){
+    .RightAboutPC{
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .RightUpperAbout{
+        text-align: center;
+    }
+
+    .MacImg img{
+        margin: auto;
+    }
+}
+
+@media(max-width: 450px){
+    .Benefits{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Benefits div{
+        margin: 30px;
+    }
+
+    .Footer{
+        background-color: rgb(231, 231, 250);
+        display: grid;
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "Logo"
+        "link1"
+        "link2"
+        "link3"
+        "link4"
+        "link5"
+        "social"
+        "empty"
+        ;
+    
+        justify-content: center;
+    }
+
+    .Logo{
+        height: 140px;
+    }
+
+    .ln{
+        text-align: center;
+        height: 40px;
+    }
+
+    .DwnBtn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    body{
+        background-image: url(../Images/bg-header-mobile.png);
+        background-size: 120%;
+    }
+}
